@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.voco.piechat">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -20,8 +21,9 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="feecaec496add38848c1ef6b56eb131378a5a31a"
-            />
+            android:value="feecaec496add38848c1ef6b56eb131378a5a31a" />
+
+        <activity android:name=".secondActivity"></activity>
     </application>
 
 </manifest>

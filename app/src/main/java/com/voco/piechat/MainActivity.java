@@ -1,5 +1,6 @@
 package com.voco.piechat;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -80,5 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 .putContentType("picture")
                 .putContentId("Now"));
 
+    }
+
+    public void Next(View view) {
+        Intent intent = new Intent(MainActivity.this, secondActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }
